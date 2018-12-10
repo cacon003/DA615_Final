@@ -15,8 +15,8 @@ function setup() {
   scoreElem.position(20, height - 30);
   scoreElem.style('color', 'black');
 
-  textElem = createDiv('Use Spacebar to Play, Press Spacebar to Begin');
-  textElem.position((width / 2) - 140, height / 2);
+  textElem = createDiv('Press the Spacebar to Begin, and use the Spacebar to Move');
+  textElem.position((width / 2) - 180, height / 2);
   textElem.style('color', 'black');
 }
 
@@ -79,7 +79,7 @@ function gameOver() {
   points = 0; //reset points
   scoreElem.html('Score = ' + (points)); //update points display
   beginGame = false //set boolen to false and will wait for spacebar
-  textElem.html('Use Spacebar to Play, Press Spacebar to Begin');
+  textElem.html('Press the Spacebar to Begin, and use the Spacebar to Move');
 
 
 }
